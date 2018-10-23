@@ -2,58 +2,48 @@
 using namespace std;
 struct node
 {
-  node *next;
-  int data;
+    int data;
+    node *next;
 };
 node *head=NULL;
 void push(int val)
 {
-  node *ptr;
-  ptr=new node;
-  ptr->data=val;
-  ptr->next=head;
-  head=ptr;
-}
-bool isempty()
-{
-  if(head==NULL)
-    return true;
-  else
-    return false;
+  node *temp=new node();
+  temp->data=val;
+  temp->next=head;
+  head=temp;
 }
 void pop()
 {
-  if(isempty())
+  if(head==NULL)
     cout<<"Stack is empty";
   else
   {
-    node *ptr=head;
+    node *temp=head;
     head=head->next;
-    delete(ptr);
+    delete(temp);
   }
 }
 void show_top()
 {
-  if(isempty())
+  if(head==NULL)
     cout<<"Stack is empty";
   else
   {
     cout<<"Element at top is: "<<head->data<<endl;
   }
 }
-void displayStack()
+void display()
 {
-  if(isempty())
+  if(head==NULL)
     cout<<"Stack is empty";
   else
   {
-    cout<<"Stack is ";
-    node *ptr;
-    ptr=head;
-    while(ptr!=NULL)
+    node *temp=head;
+    while(temp!=NULL)
     {
-      cout<<ptr->data<<" ";
-      ptr=ptr->next;
+      cout<<temp->data<<" ";
+      temp=temp->next;
     }
     cout<<endl;
   }
@@ -61,11 +51,11 @@ void displayStack()
 int main()
 {
   int choice, flag=1,value;
-  do
-  {
+  while(flag==1)
+{
   cout<<"\nEnter your choice:\n1.PUSH 2.POP 3.SHOW TOP 4.DISPLAY STACK 5.EXIT\n";
   cin>>choice;
-  switch (choice)
+  switch(choice)
   {
   case 1: cout<<"Enter Value: ";
           cin>>value;
@@ -75,11 +65,11 @@ int main()
           break;
   case 3: show_top();
           break;
-  case 4: displayStack();
+  case 4: display();
           break;
-  case 5: exit(0);
+  case 5: flag=0;
           break;
   }
-}while(choice!=5);
+  }
   return 0;
 }
