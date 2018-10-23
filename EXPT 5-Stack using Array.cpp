@@ -1,63 +1,61 @@
-#include <iostream>
+#include<iostream>
+#define m 50
 using namespace std;
+int top=-1,i,n;
 class Stack
 {
-  int i,size,A[100],top;
-  public:
-  Stack()
-  {
-    cout<<"Enter size of stack: ";
-    cin>>size;
-    top = -1;
-  }
-  bool isempty()
-  {
-  if(top==-1)
-  return true;
-  else
-  return false;
-  }
-  void push(int value)
-  {
-  if(top==size-1)
-  {
-    cout<<"Stack Overflow\n";
-  }
-   else
-  {
-    top++;
-    A[top]=value;
-  }
-  }
-  void pop()
-  {
-  if(isempty())
-    cout<<"Stack Underflow!\n";
-  else
-    top--;
-  }
-  void show_top()
-  {
-  if(isempty())
-    cout<<"Stack is empty!\n";
-  else
-    cout<<"Element at top is: "<<A[top]<<"\n";
-  }
-  void displayStack()
-  {
-  if(isempty())
-  {
-    cout<<"Stack is empty!\n";
-  }
-  else
-  {
-  cout<<"Stack is ";
-  for(i=top ; i>=0; i--)
-    cout<<A[i]<<" ";
-  cout<<"\n";
-  }
-  }
+    int s[m];
+    public:
+    void push(int);
+    void pop();
+    void display();
+    void show_top();
 };
+void Stack::push(int val)
+{
+    if(top==m-1)
+    {
+        cout<<"Stack is full";
+    }
+    else
+    {
+        top++;
+        s[top]=val;
+    }
+}
+void Stack::pop()
+{
+    if(top==-1)
+    {
+        cout<<"Stack is Empty"<<endl;
+    }
+    else
+    {
+        s[top--]='\0';
+    }
+}
+void Stack::show_top()
+{
+    int x;
+    if(top==-1)
+        cout<<"stack is empty"<<"\n";
+    else
+    {
+        x=s[top];
+    }
+    cout<<x<<endl;
+}
+void Stack::display()
+{
+    if(top==-1)
+        cout<<"stack is empty"<<"\n";
+    else
+    {
+        for(i=0;i<=top;i++)
+        cout<<s[i]<<"\t";
+        cout<<"\n";
+}
+}
 int main()
 {
   Stack s;
@@ -76,7 +74,7 @@ int main()
           break;
   case 3: s.show_top();
           break;
-  case 4: s.displayStack();
+  case 4: s.display();
           break;
   case 5: flag = 0;
           break;
