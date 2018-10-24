@@ -14,7 +14,7 @@ Write a program to accept N numbers from the user and store them in an array. Th
 LAB EXPERIMENT 3(EXPT 3-Bubble Sort & Binary Search.cpp) 
 Write a program to accept N integers from the user and store them in an array. Sort the array in ascending order using Bubble sort. Then accept another number from the user, search whether that number exists in the array using Binary Search. If it does, display its index and if it doesn’t, then print that the number is not found in the array.
 
-LAB EXPERIMENT 4(.cpp) 
+LAB EXPERIMENT 4(EXPT 4-Operations on Doubly and Circular Linked List.cpp) 
 Write a menu driven program that implements the following operations on a doubly linked list and Circular Linked List : 
 •Insert a new element at the beginning ,end and in-between the given list 
 •Delete an existing element 
@@ -28,16 +28,16 @@ Stack(either implement as Linear array and as Linked list) :
 •Pop
 •Display Top of the stack
 
-LAB EXPERIMENT 6(EXPT 6-Infix to Postfix conversion)
+LAB EXPERIMENT 6(EXPT 6-Infix to Postfix.cpp)
  Write a program to demonstrate the use of stack in converting arithmetic expression from infix notation to postfix notation and in evaluating arithmetic postfix expression.
 
-LAB EXPERIMENT 7(LAB7.cpp) 
+LAB EXPERIMENT 7(EXPT 7-Circular Queue using Array.cpp) 
 Menu driven Program to demonstrate the implementation of various operations on a Circular queue (using a linear array and a linked list)
 
-LAB EXPERIMENT 8(LAB8.cpp)
+LAB EXPERIMENT 8(EXPT 8-Insertion Sort.cpp)
 Write a program to accept N numbers in an array, and then sort the array using Insertion Sort. Then accept a number from the user and insert it in the array according to the sequential order
 
-LAB EXPERIMENT 9(LAB9.cpp) 
+LAB EXPERIMENT 9(EXPT 9-Quick Sort.cpp) 
 Write a program to accept N numbers in an array, and then sort the array using Quick Sort.
 
 LAB EXPERIMENT 10(LAB10.cpp)
