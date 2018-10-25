@@ -18,7 +18,7 @@ Write a menu driven program that implements the following operations on a doubly
 •Search an element 
 •Display all the elements
 
-LAB EXPERIMENT 5(EXPT 5-Stack using Array.cpp,EXPT 5-Stack using Linked List.cpp)
+LAB EXPERIMENT 5(EXPT 5(A)-Stack using Array.cpp,EXPT 5(B)-Stack using Linked List.cpp)
  Write a menu driven program that implements the following operations on a
 Stack(either implement as Linear array and as Linked list) : 
 •Push 
@@ -37,10 +37,10 @@ Write a program to accept N numbers in an array, and then sort the array using I
 LAB EXPERIMENT 9(EXPT 9-Quick Sort.cpp) 
 Write a program to accept N numbers in an array, and then sort the array using Quick Sort.
 
-LAB EXPERIMENT 10(LAB10.cpp)
+LAB EXPERIMENT 10(EXPT 10-Selection and Merge Sort.cpp)
 Write a program to accept N numbers from the user in one array and M numbers in another array. Then, sort the arrays using Selection Sort and then merge these two arrays using Merge Sort.
 
-LAB EXPERIMENT 11()
+LAB EXPERIMENT 11(Exp.11-BST implementation.cpp)
  Write a menu driven program that implements the following operations on a Binary Search Tree(BST) : 
 •Insert a new element 
 •Delete an existing element 
