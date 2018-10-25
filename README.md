@@ -49,8 +49,8 @@ LAB EXPERIMENT 11(Exp.11-BST implementation.cpp)
 •In-order Traversal 
 •Post-order Traversal
 
-LAB EXPERIMENT 12() 
+LAB EXPERIMENT 12(EXPT 12-Heap Sort) 
 Sort the list of integers using heap tree (Heap sort)
 
-LAB EXPERIMENT 13() 
+LAB EXPERIMENT 13(EXPT 13(A).cpp,EXPT 13(B).cpp) 
 Program including all Operations on graph and illustrate the traversals using DFS and BFS
