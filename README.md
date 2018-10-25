@@ -1,6 +1,3 @@
-# Data-Structure
-Data Structures experiments using C++
-This repository contains all the experiments of data structure using C++ 
 LAB EXPERIMENT 1(EXPT 1-Array basic operations.cpp) 
 Write a menu driven program that implements following operations on a linear array:
 •Insert a new element at a specified position 
